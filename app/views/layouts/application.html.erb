@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>영업시간</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="description" content="영업시간으로 음식점을 검색하세요. 아침식사, 야식 가능한 음식점 어디일까? 브레이크타임 언제지? 영업시간, 아침, 아침식사, 야식, 브레이크타임, 브레이크, 음식점 시간, 시간별 검색, 음식점 지도">
+    <meta name="author" content="영업시간">
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="<%= request.original_url %>" />
+
+    <!-- Open Graph data for Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:title" content="영업시간" />
+    <meta property="og:image" content="https://i.ibb.co/hcxj0k1/thumbnail2.png" />
+    <meta property="og:description" content="영업시간으로 음식점을 검색하세요. 아침식사, 야식 가능한 음식점 어디일까? 브레이크타임 언제지? 영업시간, 아침, 아침식사, 야식, 브레이크타임, 브레이크, 음식점 시간, 시간별 검색, 음식점 지도" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url" content="<%= request.original_url %>"/>
+    <meta name="twitter:title" content="영업시간" />
+    <meta name="twitter:image:src" content="https://i.ibb.co/hcxj0k1/thumbnail2.png" />
+    <meta name="twitter:description" content="영업시간으로 음식점을 검색하세요. 아침식사, 야식 가능한 음식점 어디일까? 브레이크타임 언제지? 영업시간, 아침, 아침식사, 야식, 브레이크타임, 브레이크, 음식점 시간, 시간별 검색, 음식점 지도" />
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
