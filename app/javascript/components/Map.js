@@ -16,7 +16,9 @@ class Home extends React.Component {
     componentDidMount() {
         console.log("componentDidMount")
         this._isMounted = true;
-        axios.get("//dapi.kakao.com/v2/maps/sdk.js?appkey=691da5bbbd60bbeb6fa11d3f63c1c547").then(response => {
+        axios.get("//dapi.kakao.com/v2/maps/sdk.js?appkey=691da5bbbd60bbeb6fa11d3f63c1c547", {
+            mode: "no-cors"
+        }).then(response => {
             console.log(response);
         })
 
